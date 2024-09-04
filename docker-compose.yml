@@ -5,10 +5,10 @@ services:
     #     user: 501:0
     #     network_mode: 'host'
     volumes:
-      - /Users/kees/Workstation/Jellyfin/Config:/config
-      - /Users/kees/Workstation/Jellyfin/Cache:/cache
+      - $HOME/Workstation/Jellyfin/Config:/config
+      - $HOME/Workstation/Jellyfin/Cache:/cache
       - type: bind
-        source: /Users/kees/Workstation/Jellyfin/Media
+        source: $HOME/Workstation/Jellyfin/Media
         target: /media
     ports:
       - 8096:8096
@@ -28,6 +28,6 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - /Users/kees/Workstation/Jellyfin/Caddy/Caddyfile:/etc/caddy/Caddyfile
-      - /Users/kees/Workstation/Jellyfin/Caddy/data:/data
-      - /Users/kees/Workstation/Jellyfin/Caddy/config:/config
+      - $HOME/Workstation/Jellyfin/Caddy/Caddyfile:/etc/caddy/Caddyfile
+      - $HOME/Workstation/Jellyfin/Caddy/data:/data
+      - $HOME/Workstation/Jellyfin/Caddy/config:/config
