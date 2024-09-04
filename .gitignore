@@ -1,0 +1,5 @@
+.DS_Store
+/Config/
+/Cache/
+/Media/
+/Caddy/*/**

@@ -1,0 +1,7 @@
+{
+	email admin@kees.site
+}
+
+library.kees.site
+
+reverse_proxy localhost:8096
